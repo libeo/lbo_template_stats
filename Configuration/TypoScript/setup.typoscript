@@ -1,0 +1,18 @@
+
+# Module configuration
+module.tx_lbotemplatestats_web_lbotemplatestatstemplatestats {
+    persistence {
+        storagePid = {$module.tx_lbotemplatestats_templatestats.persistence.storagePid}
+    }
+    view {
+        templateRootPaths.0 = EXT:lbo_template_stats/Resources/Private/Backend/Templates/
+        templateRootPaths.1 = {$module.tx_lbotemplatestats_templatestats.view.templateRootPath}
+        partialRootPaths.0 = EXT:lbo_template_stats/Resources/Private/Backend/Partials/
+        partialRootPaths.1 = {$module.tx_lbotemplatestats_templatestats.view.partialRootPath}
+        layoutRootPaths.0 = EXT:lbo_template_stats/Resources/Private/Backend/Layouts/
+        layoutRootPaths.1 = {$module.tx_lbotemplatestats_templatestats.view.layoutRootPath}
+    }
+    settings {
+        cacheName = {$module.tx_lbotemplatestats_templatestats.settings.lbo_template_stats_cacheName}
+    }
+}

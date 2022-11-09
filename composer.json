@@ -1,0 +1,25 @@
+{
+    "name": "libeo/lbo-template-stats",
+    "type": "typo3-cms-extension",
+    "description": "Permet de visualiser quelles pages utilisent un backend_layout donn\u00e9.",
+    "authors": [],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libeo\\LboTemplateStats\\": "Classes"
+        }
+    },
+    "replace": {
+        "typo3-ter/lbo-template-stats": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "lbo_template_stats"
+        }
+    }
+}

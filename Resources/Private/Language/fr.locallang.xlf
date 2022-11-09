@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="EXT:lbo_template_stats/Resources/Private/Language/locallang.xlf" date="2022-09-29T14:53:33Z" product-name="lbo_template_stats">
+        <header/>
+        <body>
+            <trans-unit id="tx_lbotemplatestats_domain_model_backendlayout" resname="tx_lbotemplatestats_domain_model_backendlayout">
+                <target>Backend Layout</target>
+            </trans-unit>
+            <trans-unit id="tx_lbotemplatestats_domain_model_backendlayout.title" resname="tx_lbotemplatestats_domain_model_backendlayout.title">
+                <target>Titre</target>
+            </trans-unit>
+            <trans-unit id="tx_lbotemplatestats_domain_model_backendlayout.pages" resname="tx_lbotemplatestats_domain_model_backendlayout.pages">
+                <target>Pages</target>
+            </trans-unit>
+            <trans-unit id="tx_lbotemplatestats_domain_model_backendlayout.submit" resname="tx_lbotemplatestats_domain_model_backendlayout.submit">
+                <target>Envoyer</target>
+            </trans-unit>
+            <trans-unit id="tx_lbotemplatestats_domain_model_backendlayout.nopages" resname="tx_lbotemplatestats_domain_model_backendlayout.nopages">
+                <target>Le layout selectionné n'est utilisé dans aucune page</target>
+            </trans-unit>
+            <trans-unit id="tx_lbotemplatestats_domain_model_backendlayout.header" resname="tx_lbotemplatestats_domain_model_backendlayout.nopages">
+                <target>Pages utilisant</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

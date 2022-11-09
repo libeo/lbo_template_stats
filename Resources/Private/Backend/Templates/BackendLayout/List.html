@@ -1,0 +1,39 @@
+<html
+    xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+    data-namespace-typo3-fluid="true">
+
+<f:layout name="Default" />
+
+<f:section name="Content">
+    <h1>{f:translate(key: 'tx_lbotemplatestats_domain_model_backendlayout.header')} {layoutTitle}</h1>
+    <f:flashMessages />
+    <f:form method="post" action="list">
+        <f:form.select name="layoutToShow">
+            <f:for each="{backendLayouts}" as="backendLayout" key="backendLabel">
+                <f:form.select.option value="{backendLabel}"><f:translate key="{backendLayout.title}" /></f:form.select.option>
+            </f:for>
+        </f:form.select>
+        <f:form.submit value="{f:translate(key: 'tx_lbotemplatestats_domain_model_backendlayout.submit')}"></f:form.submit>
+    </f:form>
+
+    <f:if condition="{layoutPages -> f:count()} > 0">
+        <f:then>
+            <table class="tx_lbotemplatestats">
+                <tr>
+                    <th><f:translate key="tx_lbotemplatestats_domain_model_backendlayout.pages" /></th>
+                    <th>uid</th>
+                </tr>
+                <f:for each="{layoutPages}" as="page">
+                    <tr>
+                        <td><f:be.link route="web_layout" parameters="{id: page.uid}">{page.title}</f:be.link></td>
+                        <td>{page.uid}</td>
+                    </tr>
+                </f:for>
+            </table>
+        </f:then>
+        <f:else>
+            <h2><f:translate key="tx_lbotemplatestats_domain_model_backendlayout.nopages"></f:translate></h2>
+        </f:else>
+    </f:if>
+</f:section>
+</html>

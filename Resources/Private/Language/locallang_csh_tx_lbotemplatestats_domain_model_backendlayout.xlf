@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:lbo_template_stats/Resources/Private/Language/locallang_csh_tx_lbotemplatestats_domain_model_backendlayout.xlf" date="2022-09-29T14:53:33Z" product-name="lbo_template_stats">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>titre, comme retrouvé dans les TSconfig de chaque layout</source>
+			</trans-unit>
+			<trans-unit id="pages.description" resname="pages.description">
+				<source>liste des pages dans lesquelles le layout est utilisé</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
